@@ -1,1 +1,2 @@
 Git as a version control system
+git as distributed
