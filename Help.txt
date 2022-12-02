@@ -1,0 +1,72 @@
+
+merim@LAPTOP-IVRHJM8G MINGW64 /c/batch24_git
+$ git config --global user.name "merinmanoj"
+
+merim@LAPTOP-IVRHJM8G MINGW64 /c/batch24_git
+$ git config --global user.email "merinmanoj@amaljyothi.ac.in"
+
+merim@LAPTOP-IVRHJM8G MINGW64 /c/batch24_git
+$ git init
+Initialized empty Git repository in C:/batch24_git/.git/
+
+merim@LAPTOP-IVRHJM8G MINGW64 /c/batch24_git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+merim@LAPTOP-IVRHJM8G MINGW64 /c/batch24_git (master)
+$ git add file1.txt
+
+merim@LAPTOP-IVRHJM8G MINGW64 /c/batch24_git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file1.txt
+
+
+merim@LAPTOP-IVRHJM8G MINGW64 /c/batch24_git (master)
+$ git commit -m "my first commit"
+[master (root-commit) efb448e] my first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file1.txt
+
+merim@LAPTOP-IVRHJM8G MINGW64 /c/batch24_git (master)
+$ git remote add origin https://github.com/merinmanoj/gitbatch_24.git
+
+merim@LAPTOP-IVRHJM8G MINGW64 /c/batch24_git (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 247 bytes | 123.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/merinmanoj/gitbatch_24.git
+ * [new branch]      master -> master
+
+merim@LAPTOP-IVRHJM8G MINGW64 /c/batch24_git (master)
+$ git diff
+
+merim@LAPTOP-IVRHJM8G MINGW64 /c/batch24_git (master)
+$ git clone https://github.com/merinmanoj/gitbatch_24.git
+Cloning into 'gitbatch_24'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+merim@LAPTOP-IVRHJM8G MINGW64 /c/batch24_git (master)
+$
+merim@LAPTOP-IVRHJM8G MINGW64 /c/batch24_git/gitbatch_24 (master)
+$ git push origin master
+Everything up-to-date
